@@ -11,12 +11,12 @@ pip3 install -r requirements.txt
 
 ## Usage
 
-Open the folder where the app.py file is located. Open it and it will be clear.
+Open the folder where the app.py file is located. Open it and it will be clear. It automatically creates a new directory inside the directory where the app.py is located where the episodes will be stored.
 
 ```bash
 python3 app.py
 ```
-### Example
+### Example how it will look like
 
 ![Example](https://github.com/othellodesutter/VRT-NU-Downloader/blob/master/img/example.png)
 
