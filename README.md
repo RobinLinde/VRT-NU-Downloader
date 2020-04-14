@@ -18,6 +18,7 @@ python3 app.py
 ```
 ### Example
 
+![Example](https://github.com/othellodesutter/VRT-NU-Downloader/img/example.png)
 
 ## Contributing
 You can do whatever you want with this repository! Let me know if something is wrong or if you want to help.
