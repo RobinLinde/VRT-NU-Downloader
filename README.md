@@ -18,7 +18,7 @@ python3 app.py
 ```
 ### Example how it will look like
 
-![Example](https://github.com/othellodesutter/VRT-NU-Downloader/blob/master/img/example.png)
+![Example](https://github.com/othellodesutter/VRT-NU-Downloader/blob/master/img/example1.png)
 
 ## Contributing
 You can do whatever you want with this repository! Let me know if something is wrong or if you want to help.
