@@ -1,4 +1,4 @@
-# VRT-NU-Downloader
+# VRT NU Downloader
 A python application for downloading whole seasons of series available on VRT NU, made with BeautifulSoup and youtube-dl.
 
 ## Dependencies
