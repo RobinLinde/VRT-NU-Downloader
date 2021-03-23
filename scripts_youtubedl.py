@@ -1,6 +1,5 @@
 from __future__ import unicode_literals
 from bs4 import BeautifulSoup
-from os import path
 import urllib.request as urllib2
 import re
 import youtube_dl
