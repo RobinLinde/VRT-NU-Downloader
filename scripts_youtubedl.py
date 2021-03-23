@@ -1,5 +1,6 @@
 from __future__ import unicode_literals
 from bs4 import BeautifulSoup
+from os import path
 import urllib.request as urllib2
 import re
 import youtube_dl
@@ -47,6 +48,6 @@ def download_serie():
             except OSError:
                 pass
 
-        with youtube_dl.YoutubeDL({'outtmpl': folder_name + "/" + filename}) as ydl:
+        with youtube_dl.YoutubeDL({'outtmpl': folder_name + "/" + filename, 'usenetrc': True}) as ydl:
             ydl.download([link])
 
