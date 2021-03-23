@@ -1,30 +1,8 @@
 import scripts_vrt as s
 import scripts_youtubedl as y
-import netrc
-from os import path, sep
+import scripts_auth as a
 
-nrcpath = path.expanduser('~' + sep + '.netrc')
-
-print(nrcpath)
-
-if not path.exists(nrcpath):
-    username = input("\n-- Voer uw gebruikersnaam in: \n--- ")
-    password = input("\n-- Voer uw wachtwoord in: \n--- ")
-
-    f = open(nrcpath, 'x')
-    f.write("machine vrtnu\nlogin "+ username + "\npassword "+ password)
-    f.close()
-elif not netrc.netrc().authenticators('vrtnu'):
-    username = input("\n-- Voer uw gebruikersnaam in: \n--- ")
-    password = input("\n-- Voer uw wachtwoord in: \n--- ")
-
-    f = open(nrcpath, 'a')
-    f.write("\nmachine vrtnu\nlogin "+ username + "\npassword "+ password)
-    f.close()
-else :
-    nrc = netrc.netrc()
-    username = nrc.authenticators('vrtnu')[0]
-    password = nrc.authenticators('vrtnu')[2]
+a.auth()
 
 s.search_input = input("\n-- Voer in welk programma of serie u wilt downloaden: \n--- ")
 s.find_serie(s.search_input)
